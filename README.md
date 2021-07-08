@@ -51,6 +51,10 @@ Summary
 History Log
 =============
 
+- 1.0.2 -- 2021-07-08
+
+    - update planet installer, now is aware of jim toolbox flavours  
+  
 - 1.0.1 -- 2021-07-08
 
     - update planet installer, now ask whether to override an existing project if any 

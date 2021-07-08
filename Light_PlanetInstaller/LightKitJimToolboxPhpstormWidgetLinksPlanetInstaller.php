@@ -51,10 +51,25 @@ class LightKitJimToolboxPhpstormWidgetLinksPlanetInstaller extends LightBasePlan
 
         if (true === $writeItem) {
 
+            $flavours = $_ji->getTemplateFlavours();
             $project = QuestionHelper::ask($output, "What's the name of your jetbrains project? ");
+            $flavourKey = QuestionHelper::askSelectListItem($output, "Which template flavour do you want (type a number): ", $flavours);
+
+
+            $flavour = $flavours[$flavourKey];
+            switch ($flavour) {
+                case "bootstrap":
+                    $sIcon = "bi bi-code-square";
+                    break;
+                default:
+                    $sIcon = "fas fa-code";
+                    break;
+            }
+
+
             $_ji->registerJimToolboxItem("phpstorm_links", [
                 'label' => 'ide links',
-                'icon' => 'fas fa-code',
+                'icon' => $sIcon,
                 'acp_class' => 'Ling\Light_Kit_JimToolbox_PhpstormWidgetLinks\JimToolbox\PhpstormWidgetLinksToolbox',
                 'get' => [
                     "project" => $project,

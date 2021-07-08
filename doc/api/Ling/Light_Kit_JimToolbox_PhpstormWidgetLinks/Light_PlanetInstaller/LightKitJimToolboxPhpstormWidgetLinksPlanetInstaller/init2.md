@@ -59,7 +59,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [LightKitJimToolboxPhpstormWidgetLinksPlanetInstaller::init2](https://github.com/lingtalfi/Light_Kit_JimToolbox_PhpstormWidgetLinks/blob/master/Light_PlanetInstaller/LightKitJimToolboxPhpstormWidgetLinksPlanetInstaller.php#L24-L68)
+See the source code for method [LightKitJimToolboxPhpstormWidgetLinksPlanetInstaller::init2](https://github.com/lingtalfi/Light_Kit_JimToolbox_PhpstormWidgetLinks/blob/master/Light_PlanetInstaller/LightKitJimToolboxPhpstormWidgetLinksPlanetInstaller.php#L24-L83)
 
 
 See Also
