@@ -1,0 +1,6 @@
+1.0.0: 
+    - Ling:BabyYaml:1.7.11
+    - Ling:CliTools:1.10.29
+    - Ling:Light_JimToolbox:1.0.0
+    - Ling:Light_Kit_DebugTrace:1.0.1
+    - Ling:Light_PlanetInstaller:2.0.8
