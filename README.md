@@ -51,6 +51,10 @@ Summary
 History Log
 =============
 
+- 1.0.1 -- 2021-07-08
+
+    - update planet installer, now ask whether to override an existing project if any 
+  
 - 1.0.0 -- 2021-07-08
 
     - initial commit

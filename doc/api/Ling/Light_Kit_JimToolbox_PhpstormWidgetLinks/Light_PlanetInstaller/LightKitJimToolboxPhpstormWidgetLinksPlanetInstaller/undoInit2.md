@@ -57,7 +57,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [LightKitJimToolboxPhpstormWidgetLinksPlanetInstaller::undoInit2](https://github.com/lingtalfi/Light_Kit_JimToolbox_PhpstormWidgetLinks/blob/master/Light_PlanetInstaller/LightKitJimToolboxPhpstormWidgetLinksPlanetInstaller.php#L55-L71)
+See the source code for method [LightKitJimToolboxPhpstormWidgetLinksPlanetInstaller::undoInit2](https://github.com/lingtalfi/Light_Kit_JimToolbox_PhpstormWidgetLinks/blob/master/Light_PlanetInstaller/LightKitJimToolboxPhpstormWidgetLinksPlanetInstaller.php#L74-L90)
 
 
 See Also

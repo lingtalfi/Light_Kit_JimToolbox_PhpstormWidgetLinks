@@ -29,23 +29,42 @@ class LightKitJimToolboxPhpstormWidgetLinksPlanetInstaller extends LightBasePlan
 
 
         $output->write("You are installing the <b>$planetDotName</b> planet." . PHP_EOL);
-        $project = QuestionHelper::ask($output, "What's the name of your jetbrains project? ");
 
 
         /**
          * @var $_ji LightJimToolboxService
          */
         $_ji = $this->container->get("jim_toolbox");
-        $_ji->registerJimToolboxItem("phpstorm_links", [
-            'label' => 'ide links',
-            'icon' => 'fas fa-code',
-            'acp_class' => 'Ling\Light_Kit_JimToolbox_PhpstormWidgetLinks\JimToolbox\PhpstormWidgetLinksToolbox',
-            'get' => [
-                "project" => $project,
-            ],
-        ]);
+        $info = $_ji->getJimToolboxItem("phpstorm_links");
 
-        $output->write("<success>The <b>$planetDotName</b> conf has been updated.</success>" . PHP_EOL);
+        $writeItem = true;
+
+        if (false !== $info) {
+            $existingProject = $info['get']['project'] ?? null;
+            if (null !== $existingProject) {
+                if (false === QuestionHelper::askYesNo($output, "A phpstorm_links item already exists with project name: $existingProject, do you want to override it?")) {
+                    $writeItem = false;
+                }
+            }
+        }
+
+
+        if (true === $writeItem) {
+
+            $project = QuestionHelper::ask($output, "What's the name of your jetbrains project? ");
+            $_ji->registerJimToolboxItem("phpstorm_links", [
+                'label' => 'ide links',
+                'icon' => 'fas fa-code',
+                'acp_class' => 'Ling\Light_Kit_JimToolbox_PhpstormWidgetLinks\JimToolbox\PhpstormWidgetLinksToolbox',
+                'get' => [
+                    "project" => $project,
+                ],
+            ]);
+            $output->write("<success>The <b>$planetDotName</b> conf has been updated.</success>" . PHP_EOL);
+        } else {
+            $output->write("<success>Ok.</success>" . PHP_EOL);
+        }
+
     }
 
 
