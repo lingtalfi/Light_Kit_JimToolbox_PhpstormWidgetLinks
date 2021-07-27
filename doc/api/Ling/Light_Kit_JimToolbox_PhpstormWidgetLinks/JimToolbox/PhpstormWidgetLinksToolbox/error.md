@@ -58,7 +58,7 @@ Exceptions thrown
 
 Source Code
 ===========
-See the source code for method [PhpstormWidgetLinksToolbox::error](https://github.com/lingtalfi/Light_Kit_JimToolbox_PhpstormWidgetLinks/blob/master/JimToolbox/PhpstormWidgetLinksToolbox.php#L102-L105)
+See the source code for method [PhpstormWidgetLinksToolbox::error](https://github.com/lingtalfi/Light_Kit_JimToolbox_PhpstormWidgetLinks/blob/master/JimToolbox/PhpstormWidgetLinksToolbox.php#L111-L114)
 
 
 See Also
@@ -66,5 +66,5 @@ See Also
 
 The [PhpstormWidgetLinksToolbox](https://github.com/lingtalfi/Light_Kit_JimToolbox_PhpstormWidgetLinks/blob/master/doc/api/Ling/Light_Kit_JimToolbox_PhpstormWidgetLinks/JimToolbox/PhpstormWidgetLinksToolbox.md) class.
 
-Previous method: [getKitConf](https://github.com/lingtalfi/Light_Kit_JimToolbox_PhpstormWidgetLinks/blob/master/doc/api/Ling/Light_Kit_JimToolbox_PhpstormWidgetLinks/JimToolbox/PhpstormWidgetLinksToolbox/getKitConf.md)<br>
+Previous method: [getKitConf](https://github.com/lingtalfi/Light_Kit_JimToolbox_PhpstormWidgetLinks/blob/master/doc/api/Ling/Light_Kit_JimToolbox_PhpstormWidgetLinks/JimToolbox/PhpstormWidgetLinksToolbox/getKitConf.md)<br>Next method: [getControllerInfoByControllerString](https://github.com/lingtalfi/Light_Kit_JimToolbox_PhpstormWidgetLinks/blob/master/doc/api/Ling/Light_Kit_JimToolbox_PhpstormWidgetLinks/JimToolbox/PhpstormWidgetLinksToolbox/getControllerInfoByControllerString.md)<br>
 

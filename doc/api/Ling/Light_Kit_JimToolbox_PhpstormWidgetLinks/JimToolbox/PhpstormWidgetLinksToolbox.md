@@ -4,7 +4,7 @@
 
 The PhpstormWidgetLinksToolbox class
 ================
-2021-07-08 --> 2021-07-08
+2021-07-08 --> 2021-07-27
 
 
 
@@ -33,6 +33,7 @@ class <span class="pl-k">PhpstormWidgetLinksToolbox</span> extends [JimToolboxIt
     - public [getPaneTitle](https://github.com/lingtalfi/Light_Kit_JimToolbox_PhpstormWidgetLinks/blob/master/doc/api/Ling/Light_Kit_JimToolbox_PhpstormWidgetLinks/JimToolbox/PhpstormWidgetLinksToolbox/getPaneTitle.md)() : string
     - protected [getKitConf](https://github.com/lingtalfi/Light_Kit_JimToolbox_PhpstormWidgetLinks/blob/master/doc/api/Ling/Light_Kit_JimToolbox_PhpstormWidgetLinks/JimToolbox/PhpstormWidgetLinksToolbox/getKitConf.md)(string $uri, ?string &$file = null) : array
     - private [error](https://github.com/lingtalfi/Light_Kit_JimToolbox_PhpstormWidgetLinks/blob/master/doc/api/Ling/Light_Kit_JimToolbox_PhpstormWidgetLinks/JimToolbox/PhpstormWidgetLinksToolbox/error.md)(string $msg, ?int $code = null) : void
+    - private [getControllerInfoByControllerString](https://github.com/lingtalfi/Light_Kit_JimToolbox_PhpstormWidgetLinks/blob/master/doc/api/Ling/Light_Kit_JimToolbox_PhpstormWidgetLinks/JimToolbox/PhpstormWidgetLinksToolbox/getControllerInfoByControllerString.md)(string $controllerString) : array
 
 - Inherited methods
     - public JimToolboxItemBaseHandler::setContainer([Ling\Light\ServiceContainer\LightServiceContainerInterface](https://github.com/lingtalfi/Light/blob/master/doc/api/Ling/Light/ServiceContainer/LightServiceContainerInterface.md) $container) : void
@@ -52,6 +53,7 @@ Methods
 - [PhpstormWidgetLinksToolbox::getPaneTitle](https://github.com/lingtalfi/Light_Kit_JimToolbox_PhpstormWidgetLinks/blob/master/doc/api/Ling/Light_Kit_JimToolbox_PhpstormWidgetLinks/JimToolbox/PhpstormWidgetLinksToolbox/getPaneTitle.md) &ndash; Returns the title or the pane.
 - [PhpstormWidgetLinksToolbox::getKitConf](https://github.com/lingtalfi/Light_Kit_JimToolbox_PhpstormWidgetLinks/blob/master/doc/api/Ling/Light_Kit_JimToolbox_PhpstormWidgetLinks/JimToolbox/PhpstormWidgetLinksToolbox/getKitConf.md) &ndash; Returns the kit conf array for the given uri, and sets the file it came from (if any).
 - [PhpstormWidgetLinksToolbox::error](https://github.com/lingtalfi/Light_Kit_JimToolbox_PhpstormWidgetLinks/blob/master/doc/api/Ling/Light_Kit_JimToolbox_PhpstormWidgetLinks/JimToolbox/PhpstormWidgetLinksToolbox/error.md) &ndash; Throws an exception.
+- [PhpstormWidgetLinksToolbox::getControllerInfoByControllerString](https://github.com/lingtalfi/Light_Kit_JimToolbox_PhpstormWidgetLinks/blob/master/doc/api/Ling/Light_Kit_JimToolbox_PhpstormWidgetLinks/JimToolbox/PhpstormWidgetLinksToolbox/getControllerInfoByControllerString.md) &ndash; Returns an array of info about the controller identified by the given controller string.
 - JimToolboxItemBaseHandler::setContainer &ndash; Sets the light service container interface.
 
 

@@ -5,7 +5,8 @@ $layout = $conf['layout'];
 $layoutFilename = basename($layout);
 $zones = $conf['zones'];
 $project = $jetbrainProject;
-
+$controller = $conf['controller'];
+$controllerShortName = $conf['controllerShortName'];
 
 
 function getJetbrainUrl(string $path, string $project): string
@@ -22,6 +23,17 @@ function getJetbrainUrl(string $path, string $project): string
 
 
 <table class="table table-sm">
+    <tr>
+        <td>Controller</td>
+        <td class="toolbox-wordbreak">
+            <?php if (null !== $controller): ?>
+                <a href="<?php echo htmlspecialchars(getJetbrainUrl($controller, $project)); ?>"><?php echo $controllerShortName; ?></a>
+            <?php else: ?>
+                NULL
+            <?php endif; ?>
+        </td>
+    </tr>
+
     <tr>
         <td>Layout</td>
         <td class="toolbox-wordbreak"><a

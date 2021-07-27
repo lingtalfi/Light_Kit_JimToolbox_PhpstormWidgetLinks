@@ -6,8 +6,8 @@ namespace Ling\Light_Kit_JimToolbox_PhpstormWidgetLinks\JimToolbox;
 
 use Ling\BabyYaml\BabyYamlUtil;
 use Ling\Light_JimToolbox\Item\JimToolboxItemBaseHandler;
-use Ling\Light_Kit_JimToolbox_PhpstormWidgetLinks\Exception\LightKitJimToolboxPhpstormWidgetLinksException;
 use Ling\Light_Kit_DebugTrace\Service\LightKitDebugTraceService;
+use Ling\Light_Kit_JimToolbox_PhpstormWidgetLinks\Exception\LightKitJimToolboxPhpstormWidgetLinksException;
 
 
 /**
@@ -44,6 +44,15 @@ class PhpstormWidgetLinksToolbox extends JimToolboxItemBaseHandler
             if (true === array_key_exists("kit_conf", $arr)) {
 
                 $conf = $arr['kit_conf'];
+                $conf['controller'] = null;
+
+
+                $controller = $arr['route']['controller'] ?? null;
+                if (null !== $controller) {
+                    $info = $this->getControllerInfoByControllerString($controller);
+                    $conf['controller'] = $info['relPath'];
+                    $conf['controllerShortName'] = $info['shortName'];
+                }
 
 
                 ob_start();
@@ -102,5 +111,40 @@ class PhpstormWidgetLinksToolbox extends JimToolboxItemBaseHandler
     private function error(string $msg, int $code = null)
     {
         throw new LightKitJimToolboxPhpstormWidgetLinksException(static::class . ": " . $msg, $code);
+    }
+
+
+    /**
+     * Returns an array of info about the controller identified by the given controller string.
+     *
+     * The returned array has the following structure:
+     *
+     * - relPath: string, the relative path to the controller file (from the app root dir)
+     * - shortName: string, the short name of the controller class
+     *
+     *
+     * Example of controller string:
+     *
+     * - Ling\Light_Kit_Store\Controller\Front\StoreSearchResultsController->render
+     *
+     *
+     *
+     * @param string $controllerString
+     * @return array
+     */
+    private function getControllerInfoByControllerString(string $controllerString): array
+    {
+        $p = explode("->", $controllerString, 2);
+        $controller = array_shift($p);
+        $relPath = "universe/" . str_replace('\\', '/', $controller) . ".php";
+
+
+        $p = explode("\\", $controller);
+        $shortName = array_pop($p);
+
+        return [
+            'relPath' => $relPath,
+            'shortName' => $shortName,
+        ];
     }
 }

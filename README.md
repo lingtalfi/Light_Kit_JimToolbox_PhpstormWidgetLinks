@@ -1,6 +1,6 @@
 Light_Kit_JimToolbox_PhpstormWidgetLinks
 ===========
-2021-07-08
+2021-07-08 -> 2021-07-27
 
 
 
@@ -51,6 +51,10 @@ Summary
 History Log
 =============
 
+- 1.0.3 -- 2021-07-27
+
+    - update panel, add link to controller  
+  
 - 1.0.2 -- 2021-07-08
 
     - update planet installer, now is aware of jim toolbox flavours  
