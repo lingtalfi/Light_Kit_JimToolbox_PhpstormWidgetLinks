@@ -34,12 +34,28 @@ Or just download it and place it where you want otherwise.
 
 
 
+Register it to Ling.Light_JimToolbox:
+------
+
+Example snippet:
+
+```yaml
+phpstorm_links: 
+    label: ide links
+    icon: bi bi-code-square
+    acp_class: Ling\Light_Kit_JimToolbox_PhpstormWidgetLinks\JimToolbox\PhpstormWidgetLinksToolbox
+    get: 
+        project: kit_store
+
+```
+
+
+
 
 
 Summary
 ===========
 - [Light_Kit_JimToolbox_PhpstormWidgetLinks api](https://github.com/lingtalfi/Light_Kit_JimToolbox_PhpstormWidgetLinks/blob/master/doc/api/Ling/Light_Kit_JimToolbox_PhpstormWidgetLinks.md) (generated with [DocTools](https://github.com/lingtalfi/DocTools))
-- [Services](#services)
 - Pages
     - [Conception notes](https://github.com/lingtalfi/Light_Kit_JimToolbox_PhpstormWidgetLinks/blob/master/doc/pages/conception-notes.md)
 
@@ -51,6 +67,10 @@ Summary
 History Log
 =============
 
+- 1.0.4 -- 2021-07-27
+
+    - update README.md, removed unused link, add section
+  
 - 1.0.3 -- 2021-07-27
 
     - update panel, add link to controller  
