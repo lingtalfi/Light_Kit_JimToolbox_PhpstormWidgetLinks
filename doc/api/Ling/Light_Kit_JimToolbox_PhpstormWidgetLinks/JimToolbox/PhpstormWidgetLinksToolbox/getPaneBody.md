@@ -71,7 +71,7 @@ Exceptions thrown
 
 Source Code
 ===========
-See the source code for method [PhpstormWidgetLinksToolbox::getPaneBody](https://github.com/lingtalfi/Light_Kit_JimToolbox_PhpstormWidgetLinks/blob/master/JimToolbox/PhpstormWidgetLinksToolbox.php#L32-L67)
+See the source code for method [PhpstormWidgetLinksToolbox::getPaneBody](https://github.com/lingtalfi/Light_Kit_JimToolbox_PhpstormWidgetLinks/blob/master/JimToolbox/PhpstormWidgetLinksToolbox.php#L32-L75)
 
 
 See Also

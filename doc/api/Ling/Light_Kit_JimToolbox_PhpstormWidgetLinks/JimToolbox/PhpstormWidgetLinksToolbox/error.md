@@ -58,7 +58,7 @@ Exceptions thrown
 
 Source Code
 ===========
-See the source code for method [PhpstormWidgetLinksToolbox::error](https://github.com/lingtalfi/Light_Kit_JimToolbox_PhpstormWidgetLinks/blob/master/JimToolbox/PhpstormWidgetLinksToolbox.php#L111-L114)
+See the source code for method [PhpstormWidgetLinksToolbox::error](https://github.com/lingtalfi/Light_Kit_JimToolbox_PhpstormWidgetLinks/blob/master/JimToolbox/PhpstormWidgetLinksToolbox.php#L119-L122)
 
 
 See Also

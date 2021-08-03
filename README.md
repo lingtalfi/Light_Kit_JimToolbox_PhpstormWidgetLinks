@@ -1,6 +1,6 @@
 Light_Kit_JimToolbox_PhpstormWidgetLinks
 ===========
-2021-07-08 -> 2021-07-27
+2021-07-08 -> 2021-08-03
 
 
 
@@ -66,6 +66,10 @@ Summary
 
 History Log
 =============
+
+- 1.0.5 -- 2021-08-03
+
+    - update pane, add page link (if babyYaml storage is used)
 
 - 1.0.4 -- 2021-07-27
 

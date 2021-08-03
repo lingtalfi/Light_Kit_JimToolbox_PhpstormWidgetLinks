@@ -7,6 +7,8 @@ $zones = $conf['zones'];
 $project = $jetbrainProject;
 $controller = $conf['controller'];
 $controllerShortName = $conf['controllerShortName'];
+$babyPagePath = $conf['babyPagePath'] ?? null;
+$babyPageLabel = $conf['babyPageLabel'] ?? null;
 
 
 function getJetbrainUrl(string $path, string $project): string
@@ -28,6 +30,16 @@ function getJetbrainUrl(string $path, string $project): string
         <td class="toolbox-wordbreak">
             <?php if (null !== $controller): ?>
                 <a href="<?php echo htmlspecialchars(getJetbrainUrl($controller, $project)); ?>"><?php echo $controllerShortName; ?></a>
+            <?php else: ?>
+                NULL
+            <?php endif; ?>
+        </td>
+    </tr>
+    <tr>
+        <td>Page</td>
+        <td class="toolbox-wordbreak">
+            <?php if (null !== $babyPagePath): ?>
+                <a href="<?php echo htmlspecialchars(getJetbrainUrl($babyPagePath, $project)); ?>"><?php echo $babyPageLabel; ?></a>
             <?php else: ?>
                 NULL
             <?php endif; ?>

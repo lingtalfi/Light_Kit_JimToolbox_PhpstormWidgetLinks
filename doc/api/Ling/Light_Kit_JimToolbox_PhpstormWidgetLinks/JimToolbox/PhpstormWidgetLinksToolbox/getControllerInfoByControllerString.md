@@ -59,7 +59,7 @@ Returns array.
 
 Source Code
 ===========
-See the source code for method [PhpstormWidgetLinksToolbox::getControllerInfoByControllerString](https://github.com/lingtalfi/Light_Kit_JimToolbox_PhpstormWidgetLinks/blob/master/JimToolbox/PhpstormWidgetLinksToolbox.php#L135-L149)
+See the source code for method [PhpstormWidgetLinksToolbox::getControllerInfoByControllerString](https://github.com/lingtalfi/Light_Kit_JimToolbox_PhpstormWidgetLinks/blob/master/JimToolbox/PhpstormWidgetLinksToolbox.php#L143-L157)
 
 
 See Also

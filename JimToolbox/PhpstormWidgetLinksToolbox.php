@@ -55,6 +55,14 @@ class PhpstormWidgetLinksToolbox extends JimToolboxItemBaseHandler
                 }
 
 
+                if (true === array_key_exists("babyYamlPage", $conf)) {
+                    $babyPage = $conf['babyYamlPage'];
+                    $conf['babyPagePath'] = $babyPage['file'];
+                    $conf['babyPageLabel'] = $babyPage['name'];
+
+                }
+
+
                 ob_start();
                 require_once __DIR__ . "/pane_body.inc.php";
                 return ob_get_clean();
